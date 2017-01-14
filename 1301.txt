@@ -1,0 +1,13 @@
+database 
+collabation
+insert into tablaer nam(column1,column2,column3...) values('value1'...)
+UPDATE table name SET columnnName='value1',column2='value2'
+UPDATE trainees SET contact_no ="0123454555" WHERE id=1
+jodi masud ranar index na thake
+UPDATE trainees SET contact_no ="012345" WHERE fullname="masud rana"
+where na ldile sobar change hobe..
+SELECT * FROM trainees where status=0 AND id=1
+SELECT * FROM tr
+SELECT fullname,contact_no trainees wHERE status=1
+text hote data nebar jonno
+LIKE %DHAKa% vvvi...
