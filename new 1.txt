@@ -1,0 +1,9 @@
+
+UPDATE employees SET extension='X002' WHERE officeCode=6
+DELETE FROM employees WHERE officeCode=3
+SELECT firstname, lastname ,jobtitle FROM employees
+SELECT * FROM employees WHERE lastName = "Patterson"
+SELECT * FROM employees WHERE employeeNumber BETWEEN 1000 and 1500 1500 soho
+SELECT lastname, firstname,email address FROM employees WHERE jobTitle = 'president'
+SELECT * FROM employees WHERE email LIKE '%m%'
+ALTER TABLE table_name ADD column_name datatype
