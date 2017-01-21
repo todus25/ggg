@@ -1,0 +1,35 @@
+SELECT * FROM workers
+SELECT * FROM workers ORDER BY name
+SELECT * FROM workers WHERE country='Bangladesh'
+SELECT * FROM workers WHERE country='Bangladesh' OR country='India' OR country='Canada'
+SELECT AVG(salary) FROM workers
+SELECT MAX(salary) FROM workers
+SELECT MIN(salary) FROM workers
+SELECT SUM(salary) FROM workers
+SELECT COUNT(*) FROM workers
+
+SELECT name,contact_no,joining_date FROM workers WHERE joining_date<'2000-01-01'
+SELECT name,contact_no,joining_date FROM workers WHERE joining_date>'2000-01-01'
+SELECT * FROM workers WHERE address LIKE '%summit%'
+ohn Doe
+Email: johndoe@gmail.com
+Contact No.: 9900112233
+Address: Suite 6A, Park Street
+Country: Bhutan
+Salary: 25000
+Status: 1
+Joining Date: 2017-01-01
+UPDATE workers SET contact_no='0181190191' WHERE country='Bangladesh'
+DELETE FROM workers WHERE email LIKE '%yahoo.com%'
+
+as total
+SELECT country,COUNT(*) FROM workers GROUP BY country
+SELECT country,COUNT(*) FROM workers GROUP BY country ORDER BY COUNT(*) DESC
+SELECT country,COUNT(*) FROM workers GROUP BY country HAVING COUNT(*)>3 jader 3 er besi from er sathe having hobe name//, ditei hobe
+count avg sum group er sathe where kaj kore na
+one to one,
+one to many
+many to many
+dbms er diagram pore aste hobe
+er to relational model
+

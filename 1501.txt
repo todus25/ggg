@@ -1,0 +1,31 @@
+
+lj rj ij
+SELECT table1.columnName,...,table2 column
+
+
+SELECT employees.employeeNumber,employees.firstName,employees.lastName,offices.city 
+FROM 
+employees LEFT JOIN offices ON offices.officeCode=employees.officecode
+
+
+SELECT employees.employeeNumber,employees.firstName,employees.lastName,offices.city 
+FROM employees RIGHT JOIN offices ON offices.officeCode=employees.officecode
+ WHERE offices.city='paris'
+
+
+SELECT E.employeeNumber,E.firstName,E.lastName,offices.city
+ FROM employees as E RIGHT JOIN offices ON offices.officeCode=E.officecode 
+ WHERE offices.city='paris'
+ 
+ SELF REFERENCING
+ 
+ SELECT employees.employeeNumber,employees.lastName,employees.firstName,reports.lastName as repoting boss//vvi ..last name onnotar stahe jate mise na jay 
+ FROM employees 
+ LEFT JOIN employees as reports ON reports.employeeNumber=employees.reportsTo
+ SELECT employees.employeeNumber,employees.lastName,employees.firstName,reports.lastName as repoting boss//vvi ..last name onnotar stahe jate mise na jay 
+ FROM employees 
+ RIGHT JOIN employees as reports ON reports.employeeNumber=employees.reportsTo
+ 
+ 
+ SELECT film.title,film.release_year,category.name 
+ FROM film LEFT JOIN film_category ON film_category.film_id=film.film_id LEFT JOIN category ON category.category_id=film_category.category_id WHERE category.name="action"
